@@ -14,7 +14,7 @@ const formReducer = (state, action) => {
         return { ...state, nameIsValid: action.value.trim().length > 0, name:action.value.trim()}
     }
     if (action.type === 'password') {
-        return { ...state, passwordIsValid: action.value.trim().length > 7, password:action.value.trim() }
+        return { ...state, passwordIsValid: action.value.trim().length > 1, password:action.value.trim() }
     }
 }
 
@@ -44,7 +44,7 @@ const SignIn = (props) => {
         if(formIsValid.nameIsValid && formIsValid.passwordIsValid) {
             const data = {name: formIsValid.name, password: formIsValid.password}
             localStorage.setItem('userData', JSON.stringify(data))
-            navigate(1)
+            navigate('/task/home')
         }
     }
 
