@@ -106,53 +106,53 @@ const NewTicket = () => {
     return (
         <Fragment>
         <div className="shadow-2xl w-[70%] p-4 lg:w-[60%] pb-12 xl:w-[50%] mx-auto rounded-xl border-2 border-gray-300 mt-12">
-            <div className="grid sm:grid-cols-2 gap-4 xl:mx-24 lg:mx-8 md:mx-6 mx-2 mt-4">
+            <div className="grid sm:grid-cols-2 gap-4 xl:mx-24 lg:mx-8 md:mx-6 mx-1 mt-4">
                 <div className="mt-4">
                     <label htmlFor="name" className="mr-4">Name</label><br />
                     <div className="relative">
-                        <input type="text" onChange={validationHandler} className={`${formIsValid.nameIsValid === false ? 'bg-red-100 border-2 border-red-300' : ''} outline-none p-2 px-4 rounded-full mt-4 bg-transparent border-2 border-gray-300 text-semibold shadow-lg`} id="name" name="name" placeholder="Enter name" />
+                        <input type="text" onChange={validationHandler} className={`${formIsValid.nameIsValid === false ? 'bg-red-100 border-2 border-red-300' : ''} outline-none md:p-2 md:px-4 p-1 px-2 rounded-full mt-4 bg-transparent border-2 border-gray-300 text-semibold shadow-lg`} id="name" name="name" placeholder="Enter name" />
                     </div>
                 </div>
                 <div className="mt-4">
                     <label htmlFor="name" className="mr-4">Email</label><br />
                     <div className="relative">
-                        <input type="text" onChange={validationHandler} className={`${formIsValid.emailIsValid === false ? 'bg-red-100 border-2 border-red-300' : ''} outline-none p-2 px-4 lg:pr-10 rounded-full mt-4 bg-transparent border-2 border-gray-300 text-semibold shadow-lg`} id="email" name="email" placeholder="Email Address" autoComplete="email" />
+                        <input type="text" onChange={validationHandler} className={`${formIsValid.emailIsValid === false ? 'bg-red-100 border-2 border-red-300' : ''} outline-none md:p-2 md:px-4 p-1 px-2 lg:pr-10 rounded-full mt-4 bg-transparent border-2 border-gray-300 text-semibold shadow-lg`} id="email" name="email" placeholder="Email Address" autoComplete="email" />
                     </div>
                 </div>
                 <div className="mt-4">
                     <label htmlFor="name" className="mr-4">Phone Number</label><br />
                     <div className="relative">
-                        <input type="number"onChange={validationHandler} className={`${formIsValid.mobileIsValid === false ? 'bg-red-100 border-2 border-red-300' : ''} outline-none p-2 px-4 rounded-full mt-4 bg-transparent border-2 border-gray-300 text-semibold shadow-lg`} id="mobile" name="mobile" placeholder="(123) 456 - 7890" />
+                        <input type="number"onChange={validationHandler} className={`${formIsValid.mobileIsValid === false ? 'bg-red-100 border-2 border-red-300' : ''} outline-none md:p-2 md:px-4 p-1 px-2 rounded-full mt-4 bg-transparent border-2 border-gray-300 text-semibold shadow-lg`} id="mobile" name="mobile" placeholder="(123) 456 - 7890" />
                     </div>
                 </div>
                 <div className="mt-4">
                     <label htmlFor="name" className="mr-4">Breakdown Issue </label><br />
                     <div className="relative">
-                        <input type="text" onChange={validationHandler} className={`${formIsValid.breakdownIssueIsValid === false ? 'bg-red-100 border-2 border-red-300' : ''} outline-none p-2 px-4 lg:pr-10 rounded-full mt-4 bg-transparent border-2 border-gray-300 text-semibold shadow-lg`} id="breakdown" name="breakdown" placeholder="Breakdown Issue" autoComplete="on" />
+                        <input type="text" onChange={validationHandler} className={`${formIsValid.breakdownIssueIsValid === false ? 'bg-red-100 border-2 border-red-300' : ''} outline-none md:p-2 md:px-4 p-1 px-2 lg:pr-10 rounded-full mt-4 bg-transparent border-2 border-gray-300 text-semibold shadow-lg`} id="breakdown" name="breakdown" placeholder="Breakdown Issue" autoComplete="on" />
                     </div>
                 </div>
                 <div className="mt-4">
                     <label htmlFor="name" className="mr-4">Location </label><br />
                     <div className="relative">
-                        <input type="text" onChange={validationHandler} className={`${formIsValid.locationIsValid === false ? 'bg-red-100 border-2 border-red-300' : ''} outline-none p-2 px-4 lg:pr-10 rounded-full mt-4 bg-transparent border-2 border-gray-300 text-semibold shadow-lg`} id="location" name="location" placeholder="Enter Location" autoComplete="on" />
+                        <input type="text" onChange={validationHandler} className={`${formIsValid.locationIsValid === false ? 'bg-red-100 border-2 border-red-300' : ''} outline-none md:p-2 md:px-4 p-1 px-2 lg:pr-10 rounded-full mt-4 bg-transparent border-2 border-gray-300 text-semibold shadow-lg`} id="location" name="location" placeholder="Location" autoComplete="on" />
                     </div>
                 </div>
                 <div className="mt-4">
                     <label htmlFor="name" className="mr-4">Service Fees </label><br />
                     <div className="relative">
-                        <input type="text" onChange={validationHandler} className={`${formIsValid.serviceFeesIsValid === false ? 'bg-red-100 border-2 border-red-300' : ''} outline-none p-2 px-4 lg:pr-10 rounded-full mt-4 bg-transparent border-2 border-gray-300 text-semibold shadow-lg`} id="service" name="service" placeholder="Enter Serivce fees" autoComplete="on" />
+                        <input type="text" onChange={validationHandler} className={`${formIsValid.serviceFeesIsValid === false ? 'bg-red-100 border-2 border-red-300' : ''} outline-none md:p-2 md:px-4 p-1 px-2 lg:pr-10 rounded-full mt-4 bg-transparent border-2 border-gray-300 text-semibold shadow-lg`} id="service" name="service" placeholder="Enter Serivce fees" autoComplete="on" />
                     </div>
                 </div>
                 <div className="mt-4">
                     <label htmlFor="joiningDate" className="mr-4">Assistance Time</label><br />
                     <div className="relative">
-                        <input type="text" defaultValue={currentDate} onChange={validationHandler} className={`${formIsValid.assistanceTimeIsvalid === false ? 'bg-red-100 border-2 border-red-300' : ''} outline-none p-2 px-4 rounded-full mt-4 bg-transparent border-2 border-gray-300 text-semibold shadow-lg`} id="assistance" name="assistance" placeholder="" />
+                        <input type="text" defaultValue={currentDate} onChange={validationHandler} className={`${formIsValid.assistanceTimeIsvalid === false ? 'bg-red-100 border-2 border-red-300' : ''} outline-none md:p-2 md:px-4 p-1 px-2 rounded-full mt-4 bg-transparent border-2 border-gray-300 text-semibold shadow-lg`} id="assistance" name="assistance" placeholder="" />
                     </div>
                 </div>
                 <div className="mt-4">
                     <label htmlFor="employementType" className="mr-4">Lead Source</label><br />
                     <div className="relative">
-                        <select onChange={validationHandler} className={`${formIsValid.leadSourceIsValid === false ? 'bg-red-100 border-2 border-red-300' : ''} outline-none p-2 px-4 rounded-full mt-4 bg-transparent border-2 border-gray-300 text-semibold shadow-lg`} id="lead" name="lead" placeholder="Enter Lead source">
+                        <select onChange={validationHandler} className={`${formIsValid.leadSourceIsValid === false ? 'bg-red-100 border-2 border-red-300' : ''} outline-none md:p-2 md:px-4 p-1 px-2 rounded-full mt-4 bg-transparent border-2 border-gray-300 text-semibold shadow-lg`} id="lead" name="lead" placeholder="Enter Lead source">
                             <option value="Select Type" disabled>Select Type</option>
                             <option value="Full time">Web</option>
                             <option value="Part time">Chat</option>

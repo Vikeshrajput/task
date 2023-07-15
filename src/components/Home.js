@@ -22,7 +22,7 @@ const LandingPage = () => {
   }
 
   return (
-    <div className='grid place-items-center text-2xl mt-24 font-semibold border-2 py-12 border-purple-400'>
+    <div className='grid place-items-center text-2xl mt-24 font-semibold border-2 py-12 border-purple-400 mx-4 md:mx-12'>
       <h1 className='text-gray'>Good {timeOfDay} Rescuer!</h1>
       <h2 className='mt-2'>How are you doing today, {name}?</h2>
     </div>
